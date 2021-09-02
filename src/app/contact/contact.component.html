@@ -1,0 +1,11 @@
+<form [formGroup]="contactForm" (ngSubmit)="contactSubmit(contactForm)">
+    <h1>Cotact Form</h1>
+
+    Name: <input type="text" formControlName="name"> &nbsp;&nbsp;&nbsp;
+    <span *ngIf="contactForm.get('name').invalid && submitForm">Please Enter a Valid Name</span><br><br>
+    Email: <input type="text" formControlName="email"> &nbsp;&nbsp;&nbsp;
+    <span *ngIf="contactForm.get('email').invalid && submitForm">Please Enter a Valid email</span><br><br>
+    Contact Number:<input type="text" formControlName="contact"> &nbsp;&nbsp;&nbsp;
+    <span *ngIf="contactForm.get('contact').invalid && submitForm">Please Enter a Valid contact</span><br><br>
+    <button type="submit">Send</button>
+</form>

@@ -1,0 +1,32 @@
+<h1><u><I>Start from Here</I></u></h1>
+
+<!-- <ul>
+  <li>{{persons [0]}}</li>          [Find data with array number]
+  <li>{{persons [1]}}</li>
+</ul>> -->
+
+<!-- _________________________________________________________________ -->
+
+<!-- <ul>
+  <li *ngFor="let people of persons">       [Find data with loop]
+    {{people}}
+  </li>
+</ul> -->
+
+<!-- _________________________________________________________________ -->
+
+<!-- <div>
+  <div *ngFor="let people of persons">
+  <div *ngIf="true">{{people.name}} , {{people.email}}, {{people.age}} </div>              [Find data with loop and condition always true]
+  </div>
+</div> -->
+
+<!-- _________________________________________________________________ -->
+
+<div>
+  <div *ngFor="let people of persons">
+  <div *ngIf="people.age <= 54">{{people.name}} , {{people.email}}, {{people.age}} </div>         [Find data with loop and condition]
+  </div>
+</div>
+
+
